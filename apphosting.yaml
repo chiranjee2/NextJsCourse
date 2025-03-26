@@ -1,3 +1,4 @@
+
 env:
   # Get these values from the Firebase console
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
@@ -12,4 +13,3 @@ env:
     value: 64950128034
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
     value: 1:64950128034:web:3e4b9ecb74082e676436fb
-

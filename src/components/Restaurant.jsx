@@ -53,11 +53,14 @@ export default function Restaurant({
     const unsubscribeFromRestaurant = getRestaurantSnapshotById(id, (data) => {
       setRestaurantDetails(data);
     });
-
+  
     return () => {
-      unsubscribeFromRestaurant();
+      if (typeof unsubscribeFromRestaurant === "function") {
+        unsubscribeFromRestaurant();
+      }
     };
-  }, []);
+  }, [id]); // Ensure `id` is included in dependencies
+  
 
   return (
     <>

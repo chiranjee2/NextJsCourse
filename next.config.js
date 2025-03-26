@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		serverActions: true,
-	}
-};
-
-module.exports = nextConfig;
+	// Add any other configuration options you need here
+  };
+  
+  module.exports = nextConfig;
